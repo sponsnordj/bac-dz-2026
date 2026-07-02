@@ -1,9 +1,140 @@
-.section-page{
+body{
+    background: linear-gradient(135deg,#001122,#003366);
+    font-family: Tahoma, Arial, sans-serif;
+    margin:0;
+    padding:20px;
+}
+
+/* جميع الصفحات */
+.section-page,
+.main-page{
     display:none;
-    background-color:silver;
+    background: rgba(10,20,40,0.95);
     width:600px;
     margin:auto;
-    border-radius:15px;
-    padding:15px;
+    border-radius:25px;
+    padding:20px;
     text-align:center;
+    color:white;
+
+    border:2px solid #00bfff;
+
+    box-shadow:
+    0 0 10px #00bfff,
+    0 0 25px #0088ff,
+    0 0 40px rgba(0,150,255,0.4);
+}
+
+/* الصفحة الرئيسية */
+#home-page{
+    background: rgba(10,20,40,0.95);
+    width:600px;
+    margin:auto;
+    border-radius:25px;
+    padding:20px;
+    text-align:center;
+    color:white;
+
+    border:2px solid #00bfff;
+
+    box-shadow:
+    0 0 10px #00bfff,
+    0 0 25px #0088ff,
+    0 0 40px rgba(0,150,255,0.4);
+}
+
+/* العناوين */
+h1{
+    color:#ffffff;
+    text-shadow:
+    0 0 10px #00bfff,
+    0 0 20px #00bfff;
+}
+
+h2,h3{
+    color:#d6f4ff;
+}
+
+/* أزرار المواد */
+.subject-btn{
+    width:220px;
+    height:60px;
+    font-size:18px;
+    border:none;
+    border-radius:15px;
+    cursor:pointer;
+    color:white;
+    font-weight:bold;
+
+    box-shadow:
+    0 0 8px rgba(255,255,255,0.3);
+
+    transition:0.3s;
+}
+
+.subject-btn:hover{
+    transform:scale(1.05);
+    box-shadow:
+    0 0 15px white,
+    0 0 25px white;
+}
+
+/* أزرار الدروس والملخصات */
+.menu-btn{
+    width:220px;
+    height:60px;
+    font-size:18px;
+    border:none;
+    border-radius:15px;
+    cursor:pointer;
+    background:#0055aa;
+    color:white;
+    font-weight:bold;
+
+    transition:0.3s;
+}
+
+.menu-btn:hover{
+    background:#0088ff;
+    transform:scale(1.05);
+}
+
+/* زر العودة */
+.back-btn{
+    padding:12px 20px;
+    border:none;
+    border-radius:12px;
+    background:#004488;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.back-btn:hover{
+    background:#0077ff;
+}
+
+/* الحقول */
+input,
+textarea,
+select{
+    padding:10px;
+    border-radius:10px;
+    border:none;
+    width:80%;
+}
+
+/* الهاتف */
+@media(max-width:700px){
+
+    .section-page,
+    .main-page,
+    #home-page{
+        width:95%;
+    }
+
+    .subject-btn,
+    .menu-btn{
+        width:90%;
+    }
 }

@@ -1,1 +1,9 @@
-
+.section-page{
+    display:none;
+    background-color:silver;
+    width:600px;
+    margin:auto;
+    border-radius:15px;
+    padding:15px;
+    text-align:center;
+}

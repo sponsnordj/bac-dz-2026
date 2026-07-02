@@ -1,4 +1,3 @@
-
 function showSection(sectionId){
 
 document.getElementById("home-page").style.display="none";
@@ -23,4 +22,3 @@ section.style.display="none";
 
 document.getElementById("home-page").style.display="block";
 }
-

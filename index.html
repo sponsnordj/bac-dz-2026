@@ -73,20 +73,64 @@ placeholder="اكتب تعليقك هنا..." required></textarea>
 
 <!-- علوم تجريبية -->
 
-<div id="science" class="section-page"> 
- <h1>شعبة علوم تجريبية</h1> 
- <button onclick="goBack()">⬅️ العودة للرئيسية</button><br><br>
- <div> 
-  <button onclick="showSection('science-subject')" style="width:220px;height:60px;font-size:18px;background-color:lightgreen"> مادة العلوم الطبيعية </button>
-  <button onclick="showSection('physics-subject')" style="width:220px;height:60px;font-size:18px;background-color:blue"> مادة العلوم الفيزيائية </button><br><br>
-  <button onclick="showSection('math-subject')" style="width:220px;height:60px;font-size:18px;background-color:orange"> مادة الرياضيــــات </button>
-  <button onclick="showSection('arabic-subject')"style="width:220px;height:60px;font-size:18px;background-color:brown"> مادة اللغة العربية </button><br><br>
-  <button onclick="showSection('islamic-subject')"style="width:220px;height:60px;font-size:18px;background-color:darkgreen"> مادة العلوم الاسلامية </button>
-  <button onclick="showSection('history-subject')"style="width:220px;height:60px;font-size:18px;background-color:teal"> مادة التاريخ والجغرافيا </button><br><br>
-  <button onclick="showSection('philosophy-subject')"style="width:220px;height:60px;font-size:18px;background-color:purple"> مادة الفلسفـــة </button>
-  <button onclick="showSection('english-subject')"style="width:220px;height:60px;font-size:18px;background-color:red"> مادة اللغة الإنجليزية </button><br><br>
-  <button onclick="showSection('french-subject')"style="width:220px;height:60px;font-size:18px;background-color:cyan"> مادة اللغة الفرنسية </button>
- </div>
+<div id="science" class="section-page">
+
+<h1>شعبة علوم تجريبية</h1>
+
+<button class="back-btn" onclick="goBack()">
+⬅️ العودة للرئيسية
+</button>
+
+<br><br>
+
+<div>
+
+<button class="subject-btn" onclick="showSection('science-subject')" style="background-color:lightgreen">
+مادة العلوم الطبيعية
+</button>
+
+<button class="subject-btn" onclick="showSection('physics-subject')" style="background-color:blue">
+مادة العلوم الفيزيائية
+</button>
+
+<br><br>
+
+<button class="subject-btn" onclick="showSection('math-subject')" style="background-color:orange">
+مادة الرياضيــــات
+</button>
+
+<button class="subject-btn" onclick="showSection('arabic-subject')" style="background-color:brown">
+مادة اللغة العربية
+</button>
+
+<br><br>
+
+<button class="subject-btn" onclick="showSection('islamic-subject')" style="background-color:darkgreen">
+مادة العلوم الإسلامية
+</button>
+
+<button class="subject-btn" onclick="showSection('history-subject')" style="background-color:teal">
+مادة التاريخ والجغرافيا
+</button>
+
+<br><br>
+
+<button class="subject-btn" onclick="showSection('philosophy-subject')" style="background-color:purple">
+مادة الفلسفــة
+</button>
+
+<button class="subject-btn" onclick="showSection('english-subject')" style="background-color:red">
+مادة اللغة الإنجليزية
+</button>
+
+<br><br>
+
+<button class="subject-btn" onclick="showSection('french-subject')" style="background-color:cyan">
+مادة اللغة الفرنسية
+</button>
+
+</div>
+
 </div>
 
 <!-- رياضيات -->

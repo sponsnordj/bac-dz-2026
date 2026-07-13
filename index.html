@@ -1,30 +1,22 @@
 <!DOCTYPE html>
-
 <html lang="ar">
 <head>
 <meta charset="UTF-8">
 <title>المراجعة الشاملة للبكالوريا الجزائرية</title>
  <link rel="stylesheet" href="style.css">
 </head>
-
 <body style="background-color:green;font-family:Tahoma;">
-
 <!-- الصفحة الرئيسية -->
-
 <div id="home-page" style="background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;">
-
 <div style="text-align:center;">
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUYEOv4FY4vSSXKV7LFyrdkXwBKrIKvqyVUjqmThZuhg&s=10" width="500" height="100">
 </div>
-
 <h1 style="text-align:center;color:white;">
 المراجعة الشاملة للبكالوريا الجزائرية
 </h1>
-
 <h2 style="text-align:center;color:white;">
 جميع الشعب العلمية والأدبية
 </h2>
-
 <div style="text-align:center;">
  <button onclick="showSection('science')">شعبة علوم تجريبية</button> 
  <button onclick="showSection('math')">شعبة رياضيات</button> <br><br>
@@ -33,21 +25,14 @@
  <button onclick="showSection('literature')">شعبة آداب وفلسفة</button> 
  <button onclick="showSection('languages')">شعبة لغات أجنبية</button> <br><br>
 </div>
-
 <br>
 <hr>
-
 <div style="text-align:center;">
-
 <h3>✍️ الآراء والتقييمات</h3>
-
 <form action="https://formsubmit.co/nwraldynbnywsf67@gmail.com" method="POST">
-
 <input type="hidden" name="_captcha" value="false">
-
 <input type="text" name="الاسم" placeholder="الاسم الكامل" required>
 <br><br>
-
 <select name="التقييم" required>
 <option value="5">⭐⭐⭐⭐⭐ جيد جداً</option>
 <option value="4">⭐⭐⭐⭐ جيد</option>
@@ -55,1000 +40,897 @@
 <option value="2">⭐⭐ ضعيف</option>
 <option value="1">⭐ سيء</option>
 </select>
-
 <br><br>
-
 <textarea name="الرسالة" rows="4" cols="30"
 placeholder="اكتب تعليقك هنا..." required></textarea>
-
 <br><br>
-
 <button type="submit">إرسال التقييم</button>
-
 </form>
-
 </div>
-
 </div>
-
 <!-- علوم تجريبية -->
-
-<div id="science" class="section-page">
-
-<h1>شعبة علوم تجريبية</h1>
-
-<button class="back-btn" onclick="goBack()">
-⬅️ العودة للرئيسية
-</button>
-
-<br><br>
-
-<div>
-
-<button class="subject-btn" onclick="showSection('science-subject')" style="background-color:lightgreen">
-مادة العلوم الطبيعية
-</button>
-
-<button class="subject-btn" onclick="showSection('physics-subject')" style="background-color:blue">
-مادة العلوم الفيزيائية
-</button>
-
-<br><br>
-
-<button class="subject-btn" onclick="showSection('math-subject')" style="background-color:orange">
-مادة الرياضيــــات
-</button>
-
-<button class="subject-btn" onclick="showSection('arabic-subject')" style="background-color:brown">
-مادة اللغة العربية
-</button>
-
-<br><br>
-
-<button class="subject-btn" onclick="showSection('islamic-subject')" style="background-color:darkgreen">
-مادة العلوم الإسلامية
-</button>
-
-<button class="subject-btn" onclick="showSection('history-subject')" style="background-color:teal">
-مادة التاريخ والجغرافيا
-</button>
-
-<br><br>
-
-<button class="subject-btn" onclick="showSection('philosophy-subject')" style="background-color:purple">
-مادة الفلسفــة
-</button>
-
-<button class="subject-btn" onclick="showSection('english-subject')" style="background-color:red">
-مادة اللغة الإنجليزية
-</button>
-
-<br><br>
-
-<button class="subject-btn" onclick="showSection('french-subject')" style="background-color:cyan">
-مادة اللغة الفرنسية
-</button>
-
-</div>
-
-</div>
-
-<!-- رياضيات -->
-
-<div id="math" class="section-page" >
- <h1>شعبة رياضيات</h1>
-<button onclick="goBack()">⬅️ العودة للرئيسية</button><br><br>
- <div> 
-  <button onclick="showSection('science-math-subject')" style="width:220px;height:60px;font-size:18px;background-color:lightgreen"> مادة العلوم الطبيعية </button>
-  <button onclick="showSection('physics-math-subject')" style="width:220px;height:60px;font-size:18px;background-color:blue"> مادة العلوم الفيزيائية </button><br><br>
-  <button onclick="showSection('math-math-subject')" style="width:220px;height:60px;font-size:18px;background-color:orange"> مادة الرياضيــــات </button>
-  <button onclick="showSection('arabic-math-subject')"style="width:220px;height:60px;font-size:18px;background-color:brown"> مادة اللغة العربية </button><br><br>
-  <button onclick="showSection('islamic-math-subject')"style="width:220px;height:60px;font-size:18px;background-color:darkgreen"> مادة العلوم الاسلامية </button>
-  <button onclick="showSection('history-math-subject')"style="width:220px;height:60px;font-size:18px;background-color:teal"> مادة التاريخ والجغرافيا </button><br><br>
-  <button onclick="showSection('philosophy-math-subject')"style="width:220px;height:60px;font-size:18px;background-color:purple"> مادة الفلسفـــة </button>
-  <button onclick="showSection('english-math-subject')"style="width:220px;height:60px;font-size:18px;background-color:red"> مادة اللغة الإنجليزية </button><br><br>
-  <button onclick="showSection('french-math-subject')"style="width:220px;height:60px;font-size:18px;background-color:cyan"> مادة اللغة الفرنسية </button>
+ <div id="science" class="section-page">
+ <h1>شعبة علوم تجريبية</h1>
+ <button class="back-btn" onclick="goBack()">⬅️ العودة للرئيسية</button><br><br>
+ <div>
+  <button class="subject-btn" onclick="showSection('science-subject')" style="background-color:teal">مادة العلوم الطبيعية</button>
+  <button class="subject-btn" onclick="showSection('physics-subject')" style="background-color:olive">مادة العلوم الفيزيائية</button><br><br>
+  <button class="subject-btn" onclick="showSection('math-subject')" style="background-color:gold">مادة الرياضيــــات</button>
+  <button class="subject-btn" onclick="showSection('arabic-subject')" style="background-color:gray">مادة اللغة العربية</button><br><br>
+  <button class="subject-btn" onclick="showSection('islamic-subject')" style="background-color:lightpink">مادة العلوم الإسلامية</button>
+  <button class="subject-btn" onclick="showSection('history-subject')" style="background-color:brown">مادة التاريخ والجغرافيا</button><br><br>
+  <button class="subject-btn" onclick="showSection('philosophy-subject')" style="background-color:tan">مادة الفلسفــة</button>
+  <button class="subject-btn" onclick="showSection('english-subject')" style="background-color:coral">مادة اللغة الإنجليزية</button><br><br>
+  <button class="subject-btn" onclick="showSection('french-subject')" style="background-color:khaki">مادة اللغة الفرنسية</button>
  </div>
 </div>
-
-<!-- تقني رياضي -->
-
-<div id="tech-math" class="section-page">
- <h1>شعبة تقني رياضي</h1>
-<button onclick="goBack()">⬅️ العودة للرئيسية</button><br><br>
+<!-- رياضيات --> 
+ <div id="math" class="section-page" >
+ <h1>شعبة رياضيات</h1>
+ <button class="back-btn" onclick="goBack()">⬅️ العودة للرئيسية</button><br><br>
  <div> 
-  <button onclick="showSection('technology-tech-math-subject')" style="width:220px;height:60px;font-size:18px;background-color:steelblue"> مادة التكنولوجيا </button>
-  <button onclick="showSection('physics-tech-math-subject')" style="width:220px;height:60px;font-size:18px;background-color:blue"> مادة العلوم الفيزيائية </button><br><br>
-  <button onclick="showSection('math-tech-math-subject')" style="width:220px;height:60px;font-size:18px;background-color:orange"> مادة الرياضيــــات </button>
-  <button onclick="showSection('arabic-tech-math-subject')"style="width:220px;height:60px;font-size:18px;background-color:brown"> مادة اللغة العربية </button><br><br>
-  <button onclick="showSection('islamic-tech-math-subject')"style="width:220px;height:60px;font-size:18px;background-color:darkgreen"> مادة العلوم الاسلامية </button>
-  <button onclick="showSection('history-tech-math-subject')"style="width:220px;height:60px;font-size:18px;background-color:teal"> مادة التاريخ والجغرافيا </button><br><br>
-  <button onclick="showSection('philosophy-tech-math-subject')"style="width:220px;height:60px;font-size:18px;background-color:purple"> مادة الفلسفـــة </button>
-  <button onclick="showSection('english-tech-math-subject')"style="width:220px;height:60px;font-size:18px;background-color:red"> مادة اللغة الإنجليزية </button><br><br>
-  <button onclick="showSection('french-tech-math-subject')"style="width:220px;height:60px;font-size:18px;background-color:cyan"> مادة اللغة الفرنسية </button>
+  <button class="subject-btn" onclick="showSection('science-math-subject')" style="background-color:darkblue"> مادة العلوم الطبيعية </button>
+  <button class="subject-btn" onclick="showSection('physics-math-subject')" style="background-color:darkblue"> مادة العلوم الفيزيائية </button><br><br>
+  <button class="subject-btn" onclick="showSection('math-math-subject')" style="background-color:darkblue"> مادة الرياضيــــات </button>
+  <button class="subject-btn" onclick="showSection('arabic-math-subject')"style="background-color:darkblue"> مادة اللغة العربية </button><br><br>
+  <button class="subject-btn" onclick="showSection('islamic-math-subject')"style="background-color:darkblue"> مادة العلوم الاسلامية </button>
+  <button class="subject-btn" onclick="showSection('history-math-subject')"style="background-color:darkblue"> مادة التاريخ والجغرافيا </button><br><br>
+  <button class="subject-btn" onclick="showSection('philosophy-math-subject')"style="background-color:darkblue"> مادة الفلسفـــة </button>
+  <button class="subject-btn" onclick="showSection('english-math-subject')"style="background-color:darkblue"> مادة اللغة الإنجليزية </button><br><br>
+  <button class="subject-btn" onclick="showSection('french-math-subject')"style="background-color:darkblue"> مادة اللغة الفرنسية </button>
+ </div>
+</div>
+<!-- تقني رياضي -->
+ <div id="tech-math" class="section-page">
+ <h1>شعبة تقني رياضي</h1>
+ <button class="back-btn" onclick="goBack()">⬅️ العودة للرئيسية</button><br><br>
+ <div> 
+  <button class="subject-btn" onclick="showSection('technology-tech-math-subject')" style="background-color:darkblue"> مادة التكنولوجيا </button>
+  <button class="subject-btn" onclick="showSection('physics-tech-math-subject')" style="background-color:darkblue"> مادة العلوم الفيزيائية </button><br><br>
+  <button class="subject-btn" onclick="showSection('math-tech-math-subject')" style="background-color:darkblue"> مادة الرياضيــــات </button>
+  <button class="subject-btn" onclick="showSection('arabic-tech-math-subject')"style="background-color:darkblue"> مادة اللغة العربية </button><br><br>
+  <button class="subject-btn" onclick="showSection('islamic-tech-math-subject')"style="background-color:darkblue"> مادة العلوم الاسلامية </button>
+  <button class="subject-btn" onclick="showSection('history-tech-math-subject')"style="background-color:darkblue"> مادة التاريخ والجغرافيا </button><br><br>
+  <button class="subject-btn" onclick="showSection('philosophy-tech-math-subject')"style="background-color:darkblue"> مادة الفلسفـــة </button>
+  <button class="subject-btn" onclick="showSection('english-tech-math-subject')"style="background-color:darkblue"> مادة اللغة الإنجليزية </button><br><br>
+  <button class="subject-btn" onclick="showSection('french-tech-math-subject')"style="background-color:darkblue"> مادة اللغة الفرنسية </button>
  </div> 
 </div>
-
 <!-- تسيير واقتصاد -->
-
-<div id="management" class="section-page">
+ <div id="management" class="section-page">
  <h1>شعبة تسيير واقتصاد</h1>
-<button onclick="goBack()">⬅️ العودة للرئيسية</button><br><br>
+ <button class="back-btn" onclick="goBack()">⬅️ العودة للرئيسية</button><br><br>
  <div> 
-  <button onclick="showSection('accounting-management-subject')" style="width:220px;height:60px;font-size:18px;background-color:gold"> مادة التسيير المحاسبي والمالي </button>
-  <button onclick="showSection('law-management-subject')" style="width:220px;height:60px;font-size:18px;background-color:Indigo"> مادة القانـون </button><br><br>
-  <button onclick="showSection('math-management-subject')" style="width:220px;height:60px;font-size:18px;background-color:orange"> مادة الرياضيــــات </button>
-  <button onclick="showSection('economics-management-subject')" style="width:220px;height:60px;font-size:18px;background-color:lightOrange"> مادة الإقتصاد والمناجمنت </button><br><br>
-  <button onclick="showSection('arabic-management-subject')" style="width:220px;height:60px;font-size:18px;background-color:brown"> مادة اللغة العربية </button>
-  <button onclick="showSection('islamic-management-subject')" style="width:220px;height:60px;font-size:18px;background-color:darkgreen"> مادة العلوم الاسلامية </button><br><br>
-  <button onclick="showSection('history-management-subject')" style="width:220px;height:60px;font-size:18px;background-color:teal"> مادة التاريخ والجغرافيا </button>
-  <button onclick="showSection('philosophy-management-subject')" style="width:220px;height:60px;font-size:18px;background-color:purple"> مادة الفلسفـــة </button><br><br>
-  <button onclick="showSection('english-management-subject')" style="width:220px;height:60px;font-size:18px;background-color:red"> مادة اللغة الإنجليزية </button>
-  <button onclick="showSection('french-management-subject')" style="width:220px;height:60px;font-size:18px;background-color:cyan"> مادة اللغة الفرنسية </button><br><br>
+  <button class="subject-btn" onclick="showSection('accounting-management-subject')" style="background-color:darkblue"> مادة التسيير المحاسبي والمالي </button>
+  <button class="subject-btn" onclick="showSection('law-management-subject')" style="background-color:darkblue"> مادة القانـون </button><br><br>
+  <button class="subject-btn" onclick="showSection('math-management-subject')" style="background-color:darkblue"> مادة الرياضيــــات </button>
+  <button class="subject-btn" onclick="showSection('economics-management-subject')" style="background-color:darkblue"> مادة الإقتصاد والمناجمنت </button><br><br>
+  <button class="subject-btn" onclick="showSection('arabic-management-subject')" style="background-color:darkblue"> مادة اللغة العربية </button>
+  <button class="subject-btn" onclick="showSection('islamic-management-subject')" style="background-color:darkblue"> مادة العلوم الاسلامية </button><br><br>
+  <button class="subject-btn" onclick="showSection('history-management-subject')" style="background-color:darkblue"> مادة التاريخ والجغرافيا </button>
+  <button class="subject-btn" onclick="showSection('philosophy-management-subject')" style="background-color:darkblue"> مادة الفلسفـــة </button><br><br>
+  <button class="subject-btn" onclick="showSection('english-management-subject')" style="background-color:darkblue"> مادة اللغة الإنجليزية </button>
+  <button class="subject-btn" onclick="showSection('french-management-subject')" style="background-color:darkblue"> مادة اللغة الفرنسية </button><br><br>
  </div>
 </div>
-
 <!-- آداب وفلسفة -->
-
-<div id="literature" class="section-page" >
-<h1>شعبة آداب وفلسفة</h1>
-<button onclick="goBack()">⬅️ العودة للرئيسية</button><br><br>
+ <div id="literature" class="section-page" >
+ <h1>شعبة آداب وفلسفة</h1>
+ <button class="back-btn" onclick="goBack()">⬅️ العودة للرئيسية</button><br><br>
  <div>   
-  <button onclick="showSection('math-literature-subject')" style="width:220px;height:60px;font-size:18px;background-color:orange"> مادة الرياضيــــات </button>
-  <button onclick="showSection('arabic-literature-subject')" style="width:220px;height:60px;font-size:18px;background-color:brown"> مادة اللغة العربية </button><br><br>
-  <button onclick="showSection('islamic-literature-subject')" style="width:220px;height:60px;font-size:18px;background-color:darkgreen"> مادة العلوم الاسلامية </button>
-  <button onclick="showSection('history-literature-subject')" style="width:220px;height:60px;font-size:18px;background-color:teal"> مادة التاريخ والجغرافيا </button><br><br>
-  <button onclick="showSection('philosophy-literature-subject')" style="width:220px;height:60px;font-size:18px;background-color:purple"> مادة الفلسفـــة </button>
-  <button onclick="showSection('english-literature-subject')" style="width:220px;height:60px;font-size:18px;background-color:red"> مادة اللغة الإنجليزية </button><br><br>
-  <button onclick="showSection('french-literature-subject')" style="width:220px;height:60px;font-size:18px;background-color:cyan"> مادة اللغة الفرنسية </button>
+  <button class="subject-btn" onclick="showSection('math-literature-subject')" style="background-color:darkblue"> مادة الرياضيــــات </button>
+  <button class="subject-btn" onclick="showSection('arabic-literature-subject')" style="background-color:darkblue"> مادة اللغة العربية </button><br><br>
+  <button class="subject-btn" onclick="showSection('islamic-literature-subject')" style="background-color:darkblue"> مادة العلوم الاسلامية </button>
+  <button class="subject-btn" onclick="showSection('history-literature-subject')" style="background-color:darkblue"> مادة التاريخ والجغرافيا </button><br><br>
+  <button class="subject-btn" onclick="showSection('philosophy-literature-subject')" style="background-color:darkblue"> مادة الفلسفـــة </button>
+  <button class="subject-btn" onclick="showSection('english-literature-subject')" style="background-color:darkblue"> مادة اللغة الإنجليزية </button><br><br>
+  <button class="subject-btn" onclick="showSection('french-literature-subject')" style="background-color:darkblue"> مادة اللغة الفرنسية </button>
  </div>
 </div>
-
 <!-- لغات أجنبية -->
-
-<div id="languages" class="section-page">
-<h1>شعبة لغات أجنبية</h1>
-<button onclick="goBack()">⬅️ العودة للرئيسية</button><br><br>
+ <div id="languages" class="section-page">
+ <h1>شعبة لغات أجنبية</h1>
+ <button class="back-btn" onclick="goBack()">⬅️ العودة للرئيسية</button><br><br>
  <div> 
-  <button onclick="showSection('spanish-languages-subject')" style="width:220px;height:60px;font-size:18px;background-color:red"> مادة اللغة الإسبانية </button>
-  <button onclick="showSection('german-languages-subject')" style="width:220px;height:60px;font-size:18px;background-color:red"> مادة اللغة الألمانية </button><br><br>
-  <button onclick="showSection('math-languages-subject')" style="width:220px;height:60px;font-size:18px;background-color:orange"> مادة الرياضيــــات </button>
-  <button onclick="showSection('arabic-languages-subject')" style="width:220px;height:60px;font-size:18px;background-color:brown"> مادة اللغة العربية </button><br><br>
-  <button onclick="showSection('islamic-languages-subject')" style="width:220px;height:60px;font-size:18px;background-color:darkgreen"> مادة العلوم الاسلامية </button>
-  <button onclick="showSection('history-languages-subject')" style="width:220px;height:60px;font-size:18px;background-color:teal"> مادة التاريخ والجغرافيا </button><br><br>
-  <button onclick="showSection('philosophy-languages-subject')" style="width:220px;height:60px;font-size:18px;background-color:purple"> مادة الفلسفـــة </button>
-  <button onclick="showSection('english-languages-subject')" style="width:220px;height:60px;font-size:18px;background-color:red"> مادة اللغة الإنجليزية </button><br><br>
-  <button onclick="showSection('french-languages-subject')" style="width:220px;height:60px;font-size:18px;background-color:cyan"> مادة اللغة الفرنسية </button>
+  <button class="subject-btn" onclick="showSection('spanish-languages-subject')" style="background-color:darkblue"> مادة اللغة الإسبانية </button>
+  <button class="subject-btn" onclick="showSection('german-languages-subject')" style="background-color:darkblue"> مادة اللغة الألمانية </button><br><br>
+  <button class="subject-btn" onclick="showSection('math-languages-subject')" style="background-color:darkblue"> مادة الرياضيــــات </button>
+  <button class="subject-btn" onclick="showSection('arabic-languages-subject')" style="background-color:darkblue"> مادة اللغة العربية </button><br><br>
+  <button class="subject-btn" onclick="showSection('islamic-languages-subject')" style="background-color:darkblue"> مادة العلوم الاسلامية </button>
+  <button class="subject-btn" onclick="showSection('history-languages-subject')" style="background-color:darkblue"> مادة التاريخ والجغرافيا </button><br><br>
+  <button class="subject-btn" onclick="showSection('philosophy-languages-subject')" style="background-color:darkblue"> مادة الفلسفـــة </button>
+  <button class="subject-btn" onclick="showSection('english-languages-subject')" style="background-color:darkblue"> مادة اللغة الإنجليزية </button><br><br>
+  <button class="subject-btn" onclick="showSection('french-languages-subject')" style="background-color:darkblue"> مادة اللغة الفرنسية </button>
  </div>
 </div>
-
-
 <!-- محتوى مواد شعبة العلوم التجريبية -->
  <!-- محتوى مادة العلوم الطبيعية -->
-  <div id="science-subject" class="section-page"
-  style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
+  <div id="science-subject" class="section-page">
   <h1> مادة العلوم الطبيعية 🧬 </h1>
-  <button onclick="showSection('science')">
+  <button class="back-btn" onclick="showSection('science')">
   ⬅️ العودة إلى شعبة علوم تجريبية
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button>
   <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
+  <button class="menu-btn">🎯 التمارين</button>
+  <button class="menu-btn">📄 مواضيع البكالوريا</button>
   <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
-  </div>
+  <button class="menu-btn">✅ الحلول النموذجية</button>
+ </div>
  <!-- محتوى مادة العلوم الفيزيائية -->
-  <div id="physics-subject" class="section-page"
-  style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
+  <div id="physics-subject" class="section-page">
   <h1> مادة العلوم الفيزيائية ⚛️ </h1>
-  <button onclick="showSection('science')">
+  <button class="back-btn" onclick="showSection('science')">
   ⬅️ العودة إلى شعبة علوم تجريبية
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button>
   <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
+  <button class="menu-btn">🎯 التمارين</button>
+  <button class="menu-btn">📄 مواضيع البكالوريا</button>
   <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
-  </div>
+  <button class="menu-btn">✅ الحلول النموذجية</button>
+ </div>
  <!-- محتوى مادة الرياضيات -->
-  <div id="math-subject" class="section-page" style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
+  <div id="math-subject" class="section-page" >
   <h1>  مادة الرياضيات 📐</h1>
-  <button onclick="showSection('science')">
+  <button class="back-btn" onclick="showSection('science')">
   ⬅️ العودة إلى شعبة علوم تجريبية
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button>
   <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
+  <button class="menu-btn">🎯 التمارين</button>
+  <button class="menu-btn">📄 مواضيع البكالوريا</button>
   <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
-  </div>
+  <button class="menu-btn">✅ الحلول النموذجية</button>
+ </div>
  <!-- محتوى مادة اللغة العربية -->
-  <div id="arabic-subject" class="section-page"style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
+  <div id="arabic-subject" class="section-page">
   <h1>مادة اللغة العربية 📖  </h1>
-  <button onclick="showSection('science')">
+  <button class="back-btn" onclick="showSection('science')">
   ⬅️ العودة إلى شعبة علوم تجريبية
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button>
   <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
+  <button class="menu-btn">🎯 التمارين</button>
+  <button class="menu-btn">📄 مواضيع البكالوريا</button>
   <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
-  </div>
+  <button class="menu-btn">✅ الحلول النموذجية</button>
+ </div>
  <!-- محتوى مادة العلوم الإسلامية -->
-  <div id="islamic-subject" class="section-page"style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
-  <h1>مادة العلوم الإسلامية ☪️  </h1>
-  <button onclick="showSection('science')">
+  <div id="islamic-subject" class="section-page">
+  <h1>مادة العلوم الإسلامية ☪️</h1>
+  <button class="back-btn" onclick="showSection('science')">
   ⬅️ العودة إلى شعبة علوم تجريبية
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button>
   <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
+  <button class="menu-btn">🎯 التمارين</button>
+  <button class="menu-btn">📄 مواضيع البكالوريا</button>
   <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
-  </div>
+  <button class="menu-btn">✅ الحلول النموذجية</button>
+ </div>
  <!-- محتوى مادة التاريخ والجغرافيا -->
-  <div id="history-subject" class="section-page"style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
+  <div id="history-subject" class="section-page">
   <h1> مادة التاريخ والجغرافيا 🌍 </h1>
-  <button onclick="showSection('science')">
+  <button class="back-btn" onclick="showSection('science')">
   ⬅️ العودة إلى شعبة علوم تجريبية
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button>
   <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
+  <button class="menu-btn">🎯 التمارين</button>
+  <button class="menu-btn">📄 مواضيع البكالوريا</button>
   <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
-  </div>
+  <button class="menu-btn">✅ الحلول النموذجية</button>
+ </div>
  <!-- محتوى مادة الفلسفة -->
-  <div id="philosophy-subject" class="section-page"style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
+  <div id="philosophy-subject" class="section-page">
   <h1>مادة الفلسفة 🤔  </h1>
-  <button onclick="showSection('science')">
+  <button class="back-btn" onclick="showSection('science')">
   ⬅️ العودة إلى شعبة علوم تجريبية
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button>
   <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
+  <button class="menu-btn">🎯 التمارين</button>
+  <button class="menu-btn">📄 مواضيع البكالوريا</button>
   <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
-  </div>
+  <button class="menu-btn">✅ الحلول النموذجية</button>
+ </div>
  <!-- محتوى مادة اللغة الإنجليزية -->
-  <div id="english-subject" class="section-page"style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
+  <div id="english-subject" class="section-page">
   <h1>مادة اللغة الإنجليزية 🇬🇧  </h1>
-  <button onclick="showSection('science')">
+  <button class="back-btn" onclick="showSection('science')">
   ⬅️ العودة إلى شعبة علوم تجريبية
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button>
   <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
+  <button class="menu-btn">🎯 التمارين</button>
+  <button class="menu-btn">📄 مواضيع البكالوريا</button>
   <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
-  </div>
+  <button class="menu-btn">✅ الحلول النموذجية</button>
+ </div>
  <!-- محتوى مادة اللغة الفرنسية -->
-  <div id="french-subject" class="section-page"style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
+  <div id="french-subject" class="section-page">
   <h1>مادة اللغة الفرنسية 🇫🇷  </h1>
-  <button onclick="showSection('science')">
+  <button class="back-btn" onclick="showSection('science')">
   ⬅️ العودة إلى شعبة علوم تجريبية
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button>
   <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
+  <button class="menu-btn">🎯 التمارين</button>
+  <button class="menu-btn">📄 مواضيع البكالوريا</button>
   <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
-  </div>
+  <button class="menu-btn">✅ الحلول النموذجية</button>
+ </div>
 <!-- محتوى مواد شعبة الرياضيات -->
  <!-- محتوى مادة العلوم الطبيعية -->
-  <div id="science-math-subject" class="section-page"
-  style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
- 
+  <div id="science-math-subject" class="section-page">
   <h1> مادة العلوم الطبيعية 🧬 </h1>
-  <button onclick="showSection('math')">
+  <button class="back-btn" onclick="showSection('math')">
   ⬅️ العودة إلى شعبة رياضيات
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button>
   <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
+  <button class="menu-btn">🎯 التمارين</button>
+  <button class="menu-btn">📄 مواضيع البكالوريا</button>
   <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
-  </div>
+  <button class="menu-btn">✅ الحلول النموذجية</button>
+ </div>
  <!-- محتوى مادة العلوم الفيزيائية -->
-  <div id="physics-math-subject" class="section-page"style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
+  <div id="physics-math-subject" class="section-page">
   <h1> مادة العلوم الفيزيائية ⚛️ </h1>
-  <button onclick="showSection('math')">
+  <button class="back-btn" onclick="showSection('math')">
   ⬅️ العودة إلى شعبة رياضيات
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button>
   <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
+  <button class="menu-btn">🎯 التمارين</button>
+  <button class="menu-btn">📄 مواضيع البكالوريا</button>
   <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
-  </div>
+  <button class="menu-btn">✅ الحلول النموذجية</button>
+ </div>
  <!-- محتوى مادة الرياضيات -->
-  <div id="math-math-subject" class="section-page" style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
+  <div id="math-math-subject" class="section-page">
   <h1>  مادة الرياضيات 📐</h1>
-  <button onclick="showSection('math')">
+  <button class="back-btn" onclick="showSection('math')">
   ⬅️ العودة إلى شعبة رياضيات
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button>
   <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
+  <button class="menu-btn">🎯 التمارين</button>
+  <button class="menu-btn">📄 مواضيع البكالوريا</button>
   <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
-  </div>
+  <button class="menu-btn">✅ الحلول النموذجية</button>
+ </div>
  <!-- محتوى مادة اللغة العربية -->
-  <div id="arabic-math-subject" class="section-page"style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
+  <div id="arabic-math-subject" class="section-page">
   <h1>مادة اللغة العربية 📖  </h1>
-  <button onclick="showSection('math')">
+  <button class="back-btn" onclick="showSection('math')">
   ⬅️ العودة إلى شعبة رياضيات
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button>
   <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
+  <button class="menu-btn">🎯 التمارين</button>
+  <button class="menu-btn">📄 مواضيع البكالوريا</button>
   <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
-  </div>
+  <button class="menu-btn">✅ الحلول النموذجية</button>
+ </div>
   <!-- محتوى مادة العلوم الإسلامية -->
-  <div id="islamic-math-subject" class="section-page"style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
-  <h1>مادة العلوم الإسلامية ☪️  </h1>
-  <button onclick="showSection('math')">
+  <div id="islamic-math-subject" class="section-page">
+  <h1>مادة العلوم الإسلامية ☪️</h1>
+  <button class="back-btn" onclick="showSection('math')">
   ⬅️ العودة إلى شعبة رياضيات
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button>
   <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
+  <button class="menu-btn">🎯 التمارين</button>
+  <button class="menu-btn">📄 مواضيع البكالوريا</button>
   <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
-  </div>
+  <button class="menu-btn">✅ الحلول النموذجية</button>
+ </div>
   <!-- محتوى مادة التاريخ والجغرافيا -->
-  <div id="history-math-subject" class="section-page"style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
+  <div id="history-math-subject" class="section-page">
   <h1> مادة التاريخ والجغرافيا 🌍 </h1>
-  <button onclick="showSection('math')">
+  <button class="back-btn" onclick="showSection('math')">
   ⬅️ العودة إلى شعبة رياضيات
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button>
   <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
+  <button class="menu-btn">🎯 التمارين</button>
+  <button class="menu-btn">📄 مواضيع البكالوريا</button>
   <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
-  </div>
+  <button class="menu-btn">✅ الحلول النموذجية</button>
+ </div>
  <!-- محتوى مادة الفلسفة -->
-  <div id="philosophy-math-subject" class="section-page"style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
+  <div id="philosophy-math-subject" class="section-page">
   <h1>مادة الفلسفة 🤔  </h1>
-  <button onclick="showSection('math')">
+  <button class="back-btn" onclick="showSection('math')">
   ⬅️ العودة إلى شعبة رياضيات
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button>
   <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
+  <button class="menu-btn">🎯 التمارين</button>
+  <button class="menu-btn">📄 مواضيع البكالوريا</button>
   <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
-  </div>
+  <button class="menu-btn">✅ الحلول النموذجية</button>
+ </div>
  <!-- محتوى مادة اللغة الإنجليزية -->
-  <div id="english-math-subject" class="section-page"style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
+  <div id="english-math-subject" class="section-page">
   <h1>مادة اللغة الإنجليزية 🇬🇧  </h1>
-  <button onclick="showSection('math')">
+  <button class="back-btn" onclick="showSection('math')">
   ⬅️ العودة إلى شعبة رياضيات
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button>
   <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
+  <button class="menu-btn">🎯 التمارين</button>
+  <button class="menu-btn">📄 مواضيع البكالوريا</button>
   <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
-  </div>
+  <button class="menu-btn">✅ الحلول النموذجية</button>
+ </div>
  <!-- محتوى مادة اللغة الفرنسية -->
-  <div id="french-math-subject" class="section-page"style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
+  <div id="french-math-subject" class="section-page">
   <h1>مادة اللغة الفرنسية 🇫🇷  </h1>
-  <button onclick="showSection('math')">
+  <button class="back-btn" onclick="showSection('math')">
   ⬅️ العودة إلى شعبة رياضيات
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button>
   <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
+  <button class="menu-btn">🎯 التمارين</button>
+  <button class="menu-btn">📄 مواضيع البكالوريا</button>
   <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
-  </div>
+  <button class="menu-btn">✅ الحلول النموذجية</button>
+ </div>
 <!-- محتوى مواد شعبة التقني رياضي -->
  <!-- محتوى مادة التكنولوجيا -->
-  <div id="technology-tech-math-subject" class="section-page"
-  style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
+  <div id="technology-tech-math-subject" class="section-page">
   <h1> مادة التكنولوجيا ⚙️ </h1>
-  <button onclick="showSection('tech-math')">
+  <button class="back-btn"onclick="showSection('tech-math')">
   ⬅️ العودة إلى شعبة تقني رياضي
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button>
   <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
+  <button class="menu-btn">🎯 التمارين</button>
+  <button class="menu-btn">📄 مواضيع البكالوريا</button>
   <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
-  </div>
+  <button class="menu-btn">✅ الحلول النموذجية</button>
+ </div>
  <!-- محتوى مادة العلوم الفيزيائية -->
-  <div id="physics-tech-math-subject" class="section-page"
-  style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
+  <div id="physics-tech-math-subject" class="section-page">
   <h1> مادة العلوم الفيزيائية ⚛️ </h1>
-  <button onclick="showSection('tech-math')">
+  <button class="back-btn"onclick="showSection('tech-math')">
   ⬅️ العودة إلى شعبة تقني رياضي
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button>
   <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
+  <button class="menu-btn">🎯 التمارين</button>
+  <button class="menu-btn">📄 مواضيع البكالوريا</button>
   <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
-  </div>
+  <button class="menu-btn">✅ الحلول النموذجية</button>
+ </div>
  <!-- محتوى مادة الرياضيات -->
-  <div id="math-tech-math-subject" class="section-page" style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
+  <div id="math-tech-math-subject" class="section-page" >
   <h1>  مادة الرياضيات 📐</h1>
-  <button onclick="showSection('tech-math')">
+  <button class="back-btn"onclick="showSection('tech-math')">
   ⬅️ العودة إلى شعبة تقني رياضي
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button>
   <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
+  <button class="menu-btn">🎯 التمارين</button>
+  <button class="menu-btn">📄 مواضيع البكالوريا</button>
   <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
-  </div>
+  <button class="menu-btn">✅ الحلول النموذجية</button>
+ </div>
  <!-- محتوى مادة اللغة العربية -->
-  <div id="arabic-tech-math-subject" class="section-page"style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
+  <div id="arabic-tech-math-subject" class="section-page">
   <h1>مادة اللغة العربية 📖  </h1>
-  <button onclick="showSection('tech-math')">
+  <button class="back-btn"onclick="showSection('tech-math')">
   ⬅️ العودة إلى شعبة تقني رياضي
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button>
   <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
+  <button class="menu-btn">🎯 التمارين</button>
+  <button class="menu-btn">📄 مواضيع البكالوريا</button>
   <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
-  </div>
- <!-- محتوى مادة العلوم الإسلامية -->
-  <div id="islamic-tech-math-subject" class="section-page"style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
-  <h1>مادة العلوم الإسلامية ☪️  </h1>
-  <button onclick="showSection('tech-math')">
+  <button class="menu-btn">✅ الحلول النموذجية</button>
+ </div>
+<!-- محتوى مادة العلوم الإسلامية -->
+  <div id="islamic-tech-math-subject" class="section-page">
+  <h1>مادة العلوم الإسلامية ☪️</h1>
+  <button class="back-btn" onclick="showSection('tech-math')">
   ⬅️ العودة إلى شعبة تقني رياضي
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button>
   <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
+  <button class="menu-btn">🎯 التمارين</button>
+  <button class="menu-btn">📄 مواضيع البكالوريا</button>
   <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
-  </div>
+  <button class="menu-btn">✅ الحلول النموذجية</button>
+ </div>
  <!-- محتوى مادة التاريخ والجغرافيا -->
-  <div id="history-tech-math-subject" class="section-page"style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
+  <div id="history-tech-math-subject" class="section-page">
   <h1> مادة التاريخ والجغرافيا 🌍 </h1>
-  <button onclick="showSection('tech-math')">
+  <button class="back-btn"onclick="showSection('tech-math')">
   ⬅️ العودة إلى شعبة تقني رياضي
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button>
   <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
+  <button class="menu-btn">🎯 التمارين</button>
+  <button class="menu-btn">📄 مواضيع البكالوريا</button>
   <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
-  </div>
+  <button class="menu-btn">✅ الحلول النموذجية</button>
+ </div>
  <!-- محتوى مادة الفلسفة -->
-  <div id="philosophy-tech-math-subject" class="section-page"style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
+  <div id="philosophy-tech-math-subject" class="section-page">
   <h1>مادة الفلسفة 🤔  </h1>
-  <button onclick="showSection('tech-math')">
+  <button class="back-btn"onclick="showSection('tech-math')">
   ⬅️ العودة إلى شعبة تقني رياضي
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button>
   <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
+  <button class="menu-btn">🎯 التمارين</button>
+  <button class="menu-btn">📄 مواضيع البكالوريا</button>
   <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
-  </div>
+  <button class="menu-btn">✅ الحلول النموذجية</button>
+ </div>
  <!-- محتوى مادة اللغة الإنجليزية -->
-  <div id="english-tech-math-subject" class="section-page"style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
+  <div id="english-tech-math-subject" class="section-page">
   <h1>مادة اللغة الإنجليزية 🇬🇧  </h1>
-  <button onclick="showSection('tech-math')">
+  <button class="back-btn"onclick="showSection('tech-math')">
   ⬅️ العودة إلى شعبة تقني رياضي
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button>
   <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
+  <button class="menu-btn">🎯 التمارين</button>
+  <button class="menu-btn">📄 مواضيع البكالوريا</button>
   <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
-  </div>
+  <button class="menu-btn">✅ الحلول النموذجية</button>
+ </div>
  <!-- محتوى مادة اللغة الفرنسية -->
-  <div id="french-tech-math-subject" class="section-page"style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
+  <div id="french-tech-math-subject" class="section-page">
   <h1>مادة اللغة الفرنسية 🇫🇷  </h1>
-  <button onclick="showSection('tech-math')">
+  <button class="back-btn"onclick="showSection('tech-math')">
   ⬅️ العودة إلى شعبة تقني رياضي
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button>
   <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
+  <button class="menu-btn">🎯 التمارين</button>
+  <button class="menu-btn">📄 مواضيع البكالوريا</button>
   <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
-  </div>
+  <button class="menu-btn">✅ الحلول النموذجية</button>
+ </div>
 <!-- محتوى مواد شعبة تسيير واقتصاد -->
  <!-- محتوى مادة التسيير المحاسبي والمالي -->
-  <div id="accounting-management-subject" class="section-page"
-  style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
+  <div id="accounting-management-subject" class="section-page">
   <h1> مادة التسيير المحاسبي والمالي ⚙️ </h1>
-  <button onclick="showSection('management')">
+  <button class="back-btn"onclick="showSection('management')">
   ⬅️ العودة إلى شعبة تسيير واقتصاد
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button>
   <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
+  <button class="menu-btn">🎯 التمارين</button>
+  <button class="menu-btn">📄 مواضيع البكالوريا</button>
   <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
-  </div>
+  <button class="menu-btn">✅ الحلول النموذجية</button>
+ </div>
  <!-- محتوى مادة القانون -->
-  <div id="law-management-subject" class="section-page"
-  style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
+  <div id="law-management-subject" class="section-page">
   <h1> مادة القانون  </h1>
-  <button onclick="showSection('management')">
+  <button class="back-btn"onclick="showSection('management')">
   ⬅️ العودة إلى شعبة تسيير واقتصاد
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button>
   <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
+  <button class="menu-btn">🎯 التمارين</button>
+  <button class="menu-btn">📄 مواضيع البكالوريا</button>
   <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
-  </div>
+  <button class="menu-btn">✅ الحلول النموذجية</button>
+ </div>
  <!-- محتوى مادة الرياضيات -->
-  <div id="math-management-subject" class="section-page"
-  style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
+  <div id="math-management-subject" class="section-page">
   <h1> مادة الرياضيات  </h1>
-  <button onclick="showSection('management')">
+  <button class="back-btn"onclick="showSection('management')">
   ⬅️ العودة إلى شعبة تسيير واقتصاد
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button>
   <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
+  <button class="menu-btn">🎯 التمارين</button>
+  <button class="menu-btn">📄 مواضيع البكالوريا</button>
   <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
-  </div>
+  <button class="menu-btn">✅ الحلول النموذجية</button>
+ </div>
  <!-- محتوى مادة الاقتصاد والمناجمنت -->
-  <div id="economics-management-subject" class="section-page" style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
+  <div id="economics-management-subject" class="section-page" >
   <h1>  مادة الاقتصاد والمناجمنت</h1>
-  <button onclick="showSection('management')">
+  <button class="back-btn"onclick="showSection('management')">
   ⬅️ العودة إلى شعبة تسيير واقتصاد
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button>
   <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
+  <button class="menu-btn">🎯 التمارين</button>
+  <button class="menu-btn">📄 مواضيع البكالوريا</button>
   <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
-  </div>
+  <button class="menu-btn">✅ الحلول النموذجية</button>
+ </div>
  <!-- محتوى مادة العلوم الفيزيائية -->
-  <div id="physics-management-subject" class="section-page"
-  style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
+  <div id="physics-management-subject" class="section-page">
   <h1> مادة العلوم الفيزيائية ⚛️ </h1>
-  <button onclick="showSection('management')">
+  <button class="back-btn"onclick="showSection('management')">
   ⬅️ العودة إلى شعبة تسيير واقتصاد
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button>
   <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
+  <button class="menu-btn">🎯 التمارين</button>
+  <button class="menu-btn">📄 مواضيع البكالوريا</button>
   <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
-  </div>
+  <button class="menu-btn">✅ الحلول النموذجية</button>
+ </div>
  <!-- محتوى مادة اللغة العربية -->
-  <div id="arabic-management-subject" class="section-page"style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
+  <div id="arabic-management-subject" class="section-page">
   <h1>مادة اللغة العربية 📖  </h1>
-  <button onclick="showSection('management')">
+  <button class="back-btn"onclick="showSection('management')">
   ⬅️ العودة إلى شعبة تسيير واقتصاد
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button>
   <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
+  <button class="menu-btn">🎯 التمارين</button>
+  <button class="menu-btn">📄 مواضيع البكالوريا</button>
   <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
-  </div>
+  <button class="menu-btn">✅ الحلول النموذجية</button>
+ </div>
  <!-- محتوى مادة العلوم الإسلامية -->
-  <div id="islamic-management-subject" class="section-page"style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
-  <h1>مادة العلوم الإسلامية ☪️  </h1>
-  <button onclick="showSection('management')">
+  <div id="islamic-management-subject" class="section-page">
+  <h1>مادة العلوم الإسلامية ☪️</h1>
+  <button class="back-btn" onclick="showSection('management')">
   ⬅️ العودة إلى شعبة تسيير واقتصاد
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button>
   <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
+  <button class="menu-btn">🎯 التمارين</button>
+  <button class="menu-btn">📄 مواضيع البكالوريا</button>
   <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
-  </div>
+  <button class="menu-btn">✅ الحلول النموذجية</button>
+ </div>
  <!-- محتوى مادة التاريخ والجغرافيا -->
-  <div id="history-management-subject" class="section-page"style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
+  <div id="history-management-subject" class="section-page">
   <h1> مادة التاريخ والجغرافيا 🌍 </h1>
-  <button onclick="showSection('management')">
+  <button class="back-btn"onclick="showSection('management')">
   ⬅️ العودة إلى شعبة تسيير واقتصاد
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button>
   <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
+  <button class="menu-btn">🎯 التمارين</button>
+  <button class="menu-btn">📄 مواضيع البكالوريا</button>
   <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
-  </div>
+  <button class="menu-btn">✅ الحلول النموذجية</button>
+ </div>
  <!-- محتوى مادة الفلسفة -->
-  <div id="philosophy-management-subject" class="section-page"style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
+  <div id="philosophy-management-subject" class="section-page">
   <h1>مادة الفلسفة 🤔  </h1>
-  <button onclick="showSection('management')">
+  <button class="back-btn"onclick="showSection('management')">
   ⬅️ العودة إلى شعبة تسيير واقتصاد
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button>
   <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
+  <button class="menu-btn">🎯 التمارين</button>
+  <button class="menu-btn">📄 مواضيع البكالوريا</button>
   <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
-  </div>
+  <button class="menu-btn">✅ الحلول النموذجية</button>
+ </div>
  <!-- محتوى مادة اللغة الإنجليزية -->
-  <div id="english-management-subject" class="section-page"style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
+  <div id="english-management-subject" class="section-page">
   <h1>مادة اللغة الإنجليزية 🇬🇧  </h1>
-  <button onclick="showSection('management')">
+  <button class="back-btn"onclick="showSection('management')">
   ⬅️ العودة إلى شعبة تسيير واقتصاد
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button>
   <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
+  <button class="menu-btn">🎯 التمارين</button>
+  <button class="menu-btn">📄 مواضيع البكالوريا</button>
   <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
-  </div>
+  <button class="menu-btn">✅ الحلول النموذجية</button>
+ </div>
  <!-- محتوى مادة اللغة الفرنسية -->
-  <div id="french-management-subject" class="section-page"style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
+  <div id="french-management-subject" class="section-page">
   <h1>مادة اللغة الفرنسية 🇫🇷  </h1>
-  <button onclick="showSection('management')">
+  <button class="back-btn"onclick="showSection('management')">
   ⬅️ العودة إلى شعبة تسيير واقتصاد
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button>
   <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
+  <button class="menu-btn">🎯 التمارين</button>
+  <button class="menu-btn">📄 مواضيع البكالوريا</button>
   <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
-  </div>
+  <button class="menu-btn">✅ الحلول النموذجية</button>
+ </div>
 <!-- محتوى مواد شعبة آداب وفلسفة -->
  <!-- محتوى مادة الرياضيات -->
-  <div id="math-literature-subject" class="section-page" style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
+  <div id="math-literature-subject" class="section-page" >
   <h1>  مادة الرياضيات 📐</h1>
-  <button onclick="showSection('literature')">
+  <button class="back-btn"onclick="showSection('literature')">
   ⬅️ العودة إلى شعبة آداب وفلسفة
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button>
   <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
+  <button class="menu-btn">🎯 التمارين</button>
+  <button class="menu-btn">📄 مواضيع البكالوريا</button>
   <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
-  </div>
+  <button class="menu-btn">✅ الحلول النموذجية</button>
+ </div>
  <!-- محتوى مادة اللغة العربية -->
-  <div id="arabic-literature-subject" class="section-page"style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
+  <div id="arabic-literature-subject" class="section-page">
   <h1>مادة اللغة العربية 📖  </h1>
-  <button onclick="showSection('literature')">
+  <button class="back-btn"onclick="showSection('literature')">
   ⬅️ العودة إلى شعبة آداب وفلسفة
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button>
   <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
+  <button class="menu-btn">🎯 التمارين</button>
+  <button class="menu-btn">📄 مواضيع البكالوريا</button>
   <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
-  </div>
+  <button class="menu-btn">✅ الحلول النموذجية</button>
+ </div>
   <!-- محتوى مادة العلوم الإسلامية -->
-  <div id="islamic-literature-subject" class="section-page"style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
-  <h1>مادة العلوم الإسلامية ☪️  </h1>
-  <button onclick="showSection('literature')">
+  <div id="islamic-literature-subject" class="section-page">
+  <h1>مادة العلوم الإسلامية ☪️</h1>
+  <button class="back-btn" onclick="showSection('literature')">
   ⬅️ العودة إلى شعبة آداب وفلسفة
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
-  <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
-  <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
-  </div>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button>  <br><br>
+  <button class="menu-btn">🎯 التمارين</button>
+  <button class="menu-btn">📄 مواضيع البكالوريا</button>  <br><br>
+  <button class="menu-btn">✅ الحلول النموذجية</button>
+ </div>
   <!-- محتوى مادة التاريخ والجغرافيا -->
-  <div id="history-literature-subject" class="section-page"style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
+  <div id="history-literature-subject" class="section-page">
   <h1> مادة التاريخ والجغرافيا 🌍 </h1>
-  <button onclick="showSection('literature')">
+  <button class="back-btn"onclick="showSection('literature')">
   ⬅️ العودة إلى شعبة آداب وفلسفة
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button> <br><br>
+  <button class="menu-btn">🎯 التمارين</button><button class="menu-btn">📄 مواضيع البكالوريا</button>
   <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
-  <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
-  </div>
+  <button class="menu-btn">✅ الحلول النموذجية</button>
+ </div>
  <!-- محتوى مادة الفلسفة -->
-  <div id="philosophy-literature-subject" class="section-page"style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
+  <div id="philosophy-literature-subject" class="section-page">
   <h1>مادة الفلسفة 🤔  </h1>
-  <button onclick="showSection('literature')">
+  <button class="back-btn"onclick="showSection('literature')">
   ⬅️ العودة إلى شعبة آداب وفلسفة
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
-  <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
-  <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
-  </div>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button><br><br>
+  <button class="menu-btn">🎯 التمارين</button>
+  <button class="menu-btn">📄 مواضيع البكالوريا</button><br><br>
+  <button class="menu-btn">✅ الحلول النموذجية</button>
+ </div>
  <!-- محتوى مادة اللغة الإنجليزية -->
-  <div id="english-literature-subject" class="section-page"style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
+  <div id="english-literature-subject" class="section-page">
   <h1>مادة اللغة الإنجليزية 🇬🇧  </h1>
-  <button onclick="showSection('literature')">
+  <button class="back-btn"onclick="showSection('literature')">
   ⬅️ العودة إلى شعبة آداب وفلسفة
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
-  <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
-  <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
-  </div>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button><br><br>
+  <button class="menu-btn">🎯 التمارين</button>
+  <button class="menu-btn">📄 مواضيع البكالوريا</button><br><br>
+  <button class="menu-btn">✅ الحلول النموذجية</button>
+ </div>
  <!-- محتوى مادة اللغة الفرنسية -->
-  <div id="french-literature-subject" class="section-page"style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
+  <div id="french-literature-subject" class="section-page">
   <h1>مادة اللغة الفرنسية 🇫🇷  </h1>
-  <button onclick="showSection('literature')">
+  <button class="back-btn"onclick="showSection('literature')">
   ⬅️ العودة إلى شعبة آداب وفلسفة 
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
-  <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
-  <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
-  </div>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button> <br><br>
+  <button class="menu-btn">🎯 التمارين</button>
+  <button class="menu-btn">📄 مواضيع البكالوريا</button> <br><br>
+  <button class="menu-btn">✅ الحلول النموذجية</button>
+ </div>
 <!-- محتوى مواد شعبة لغات أجنبية -->
   <!-- محتوى مادة اللغة الإسبانية -->
-  <div id="spanish-languages-subject" class="section-page"style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
+  <div id="spanish-languages-subject" class="section-page">
   <h1>مادة اللغة الإسبانية  </h1>
-  <button onclick="showSection('languages')">
+  <button class="back-btn"onclick="showSection('languages')">
   ⬅️ العودة إلى شعبة لغات أجنبية
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
-  <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
-  <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
-  </div>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button><br><br>
+  <button class="menu-btn">🎯 التمارين</button>
+  <button class="menu-btn">📄 مواضيع البكالوريا</button><br><br>
+  <button class="menu-btn">✅ الحلول النموذجية</button>
+ </div>
  <!-- محتوى مادة اللغة الألمانية -->
-  <div id="german-languages-subject" class="section-page"style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
+  <div id="german-languages-subject" class="section-page">
   <h1>مادة اللغة الألمانية  </h1>
-  <button onclick="showSection('languages')">
+  <button class="back-btn"onclick="showSection('languages')">
   ⬅️ العودة إلى شعبة لغات أجنبية
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
-  <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
-  <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
-  </div>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button><br><br>
+  <button class="menu-btn">🎯 التمارين</button>
+  <button class="menu-btn">📄 مواضيع البكالوريا</button><br><br>
+  <button class="menu-btn">✅ الحلول النموذجية</button>
+ </div>
  <!-- محتوى مادة الرياضيات -->
-  <div id="math-languages-subject" class="section-page" style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
+  <div id="math-languages-subject" class="section-page" >
   <h1>  مادة الرياضيات 📐</h1>
-  <button onclick="showSection('languages')">
+  <button class="back-btn"onclick="showSection('languages')">
   ⬅️ العودة إلى شعبة لغات أجنبية
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
-  <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
-  <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
-  </div>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button><br><br>
+  <button class="menu-btn">🎯 التمارين</button>
+  <button class="menu-btn">📄 مواضيع البكالوريا</button><br><br>
+  <button class="menu-btn">✅ الحلول النموذجية</button>
+ </div>
  <!-- محتوى مادة اللغة العربية -->
-  <div id="arabic-languages-subject" class="section-page"style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
+  <div id="arabic-languages-subject" class="section-page">
   <h1>مادة اللغة العربية 📖  </h1>
-  <button onclick="showSection('languages')">
+  <button class="back-btn" onclick="showSection('languages')">
   ⬅️ العودة إلى شعبة لغات أجنبية
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
-  <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
-  <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button><br><br>
+  <button class="menu-btn">🎯 التمارين</button>
+  <button class="menu-btn">📄 مواضيع البكالوريا</button><br><br>
+  <button class="menu-btn">✅ الحلول النموذجية</button>
   </div>
   <!-- محتوى مادة العلوم الإسلامية -->
-  <div id="islamic-languages-subject" class="section-page"style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
-  <h1>مادة العلوم الإسلامية ☪️  </h1>
-  <button onclick="showSection('languages')">
+  <div id="islamic-languages-subject" class="section-page">
+  <h1>مادة العلوم الإسلامية ☪️</h1>
+  <button class="back-btn" onclick="showSection('languages')">
   ⬅️ العودة إلى شعبة لغات أجنبية
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
-  <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
-  <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
-  </div>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button><br><br>
+  <button class="menu-btn">🎯 التمارين</button>
+  <button class="menu-btn">📄 مواضيع البكالوريا</button><br><br>
+  <button class="menu-btn">✅ الحلول النموذجية</button>
+ </div>
   <!-- محتوى مادة التاريخ والجغرافيا -->
-  <div id="history-languages-subject" class="section-page"style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
+  <div id="history-languages-subject" class="section-page">
   <h1> مادة التاريخ والجغرافيا 🌍 </h1>
-  <button onclick="showSection('languages')">
+  <button class="back-btn"onclick="showSection('languages')">
   ⬅️ العودة إلى شعبة لغات أجنبية
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
-  <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
-  <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
-  </div>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button><br><br>
+  <button class="menu-btn">🎯 التمارين</button>
+  <button class="menu-btn">📄 مواضيع البكالوريا</button><br><br>
+  <button class="menu-btn">✅ الحلول النموذجية</button>
+ </div>
  <!-- محتوى مادة الفلسفة -->
-  <div id="philosophy-languages-subject" class="section-page"style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
+  <div id="philosophy-languages-subject" class="section-page">
   <h1>مادة الفلسفة 🤔  </h1>
-  <button onclick="showSection('languages')">
+  <button class="back-btn"onclick="showSection('languages')">
   ⬅️ العودة إلى شعبة لغات أجنبية
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
-  <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
-  <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
-  </div>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button><br><br>
+  <button class="menu-btn">🎯 التمارين</button>
+  <button class="menu-btn">📄 مواضيع البكالوريا</button><br><br>
+  <button class="menu-btn">✅ الحلول النموذجية</button>
+ </div>
  <!-- محتوى مادة اللغة الإنجليزية -->
-  <div id="english-languages-subject" class="section-page"style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
+  <div id="english-languages-subject" class="section-page">
   <h1>مادة اللغة الإنجليزية 🇬🇧  </h1>
-  <button onclick="showSection('languages')">
+  <button class="back-btn"onclick="showSection('languages')">
   ⬅️ العودة إلى شعبة لغات أجنبية
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
-  <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
-  <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
-  </div>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button><br><br>
+  <button class="menu-btn">🎯 التمارين</button>
+  <button class="menu-btn">📄 مواضيع البكالوريا</button><br><br>
+  <button class="menu-btn">✅ الحلول النموذجية</button>
+ </div>
  <!-- محتوى مادة اللغة الفرنسية -->
-  <div id="french-languages-subject" class="section-page"style="display:none;background-color:silver;width:600px;margin:auto;border-radius:15px;padding:15px;text-align:center;">
+  <div id="french-languages-subject" class="section-page">
   <h1>مادة اللغة الفرنسية 🇫🇷  </h1>
-  <button onclick="showSection('languages')">
+  <button class="back-btn"onclick="showSection('languages')">
   ⬅️ العودة إلى شعبة لغات أجنبية 
   </button>
   <br><br>
-  <button style="width:220px;height:60px;">📚 الدروس</button>
-  <button style="width:220px;height:60px;">📝 الملخصات</button>
-  <br><br>
-  <button style="width:220px;height:60px;">🎯 التمارين</button>
-  <button style="width:220px;height:60px;">📄 مواضيع البكالوريا</button>
-  <br><br>
-  <button style="width:220px;height:60px;">✅ الحلول النموذجية</button>
-  </div>
+  <button class="menu-btn">📚 الدروس</button>
+  <button class="menu-btn">📝 الملخصات</button><br><br>
+  <button class="menu-btn">🎯 التمارين</button>
+  <button class="menu-btn">📄 مواضيع البكالوريا</button><br><br>
+  <button class="menu-btn">✅ الحلول النموذجية</button>
+ </div>
 <script src="script.js"></script>
 </body>
 </html>

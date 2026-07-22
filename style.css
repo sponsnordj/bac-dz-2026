@@ -83,22 +83,29 @@ h2,h3{
 .menu-btn{
     width:220px;
     height:80px;
-    font-size:18px;
     border:none;
     border-radius:15px;
-    cursor:pointer;
     background:#0055aa;
     color:white;
+    font-size:18px;
     font-weight:bold;
-
+    cursor:pointer;
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    vertical-align:top;
+    padding:5px;
+    margin:5px;
     transition:0.3s;
 }
-
 .menu-btn:hover{
     background:#0088ff;
     transform:scale(1.05);
+    box-shadow:
+    0 0 10px #00bfff,
+    0 0 20px #0088ff;
 }
-
 /* زر العودة */
 .back-btn{
     padding:12px 20px;

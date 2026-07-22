@@ -57,14 +57,26 @@ h2,h3{
 
 /* أزرار المواد */
 .subject-btn{
-    width:220px;
+    width:240px;
     height:80px;
+
     font-size:18px;
+    font-weight:bold;
+
     border:none;
-    border-radius:15px;
+    border-radius:18px;
+
     cursor:pointer;
     color:white;
-    font-weight:bold;
+
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    vertical-align:top;
+
+    padding:5px;
+    margin:5px;
 
     box-shadow:
     0 0 8px rgba(255,255,255,0.3);
@@ -74,38 +86,49 @@ h2,h3{
 
 .subject-btn:hover{
     transform:scale(1.05);
+
     box-shadow:
     0 0 15px white,
     0 0 25px white;
 }
 
-/* أزرار الدروس والملخصات */
+/* أزرار الدروس والملخصات والتمارين */
 .menu-btn{
-    width:220px;
+    width:240px;
     height:80px;
-    border:none;
-    border-radius:15px;
-    background:#0055aa;
-    color:white;
+
     font-size:18px;
     font-weight:bold;
+
+    border:none;
+    border-radius:18px;
+
     cursor:pointer;
+
+    background:#0055aa;
+    color:white;
+
     display:inline-flex;
     justify-content:center;
     align-items:center;
     text-align:center;
     vertical-align:top;
+
     padding:5px;
     margin:5px;
+
     transition:0.3s;
 }
+
 .menu-btn:hover{
     background:#0088ff;
     transform:scale(1.05);
+
     box-shadow:
     0 0 10px #00bfff,
     0 0 20px #0088ff;
 }
+
 /* زر العودة */
 .back-btn{
     padding:12px 20px;

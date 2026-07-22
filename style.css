@@ -58,7 +58,7 @@ h2,h3{
 /* أزرار المواد */
 .subject-btn{
     width:220px;
-    height:60px;
+    height:80px;
     font-size:18px;
     border:none;
     border-radius:15px;
@@ -82,7 +82,7 @@ h2,h3{
 /* أزرار الدروس والملخصات */
 .menu-btn{
     width:220px;
-    height:60px;
+    height:80px;
     font-size:18px;
     border:none;
     border-radius:15px;
